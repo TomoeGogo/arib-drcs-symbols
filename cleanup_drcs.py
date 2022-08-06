@@ -129,7 +129,7 @@ def mycallback(match):
 
 	print("Unknown DRCS hash: 0x", myhash, sep='', file=sys.stderr)
 	unknowns.add(myhash)
-	return '〓'
+	return '[外:' + myhash + ']'
 
 def main():
 	cached = re.compile(r'\[外:([0-9A-Fa-f]{32})\]')
